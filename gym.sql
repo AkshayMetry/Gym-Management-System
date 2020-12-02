@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 01, 2020 at 10:15 AM
+-- Generation Time: Dec 02, 2020 at 09:24 AM
 -- Server version: 10.4.16-MariaDB
 -- PHP Version: 7.4.12
 
@@ -47,7 +47,7 @@ CREATE TABLE `members` (
 
 INSERT INTO `members` (`id`, `membership`, `trainer`, `name`, `email`, `phone`, `address`, `city`, `zip`, `payment`, `created_date`) VALUES
 (24, 'Three Month - 1200Rs', 'test-Professional', 'test', 'test@gmail.com', '1234567890', 'Home', 'Mumbai', 400017, ' Credit/Debit Card', '2020-11-30 19:28:32'),
-(25, 'Six Month - 2400Rs', 'Manoj-Professional', 'AkshayMetry', 'akshaymetry@gmail.com', '8928786587', 'Home123434', 'Mumbai', 400018, 'Cash', '2020-11-30 19:52:06');
+(27, 'Three Month - 1200Rs', 'test3-Beginner', 'test2', 'test2@gmail.com', '1234567890', 'test', 'test', 1000012, ' Credit/Debit Card', '2020-12-02 13:52:49');
 
 -- --------------------------------------------------------
 
@@ -71,7 +71,8 @@ CREATE TABLE `trainer` (
 
 INSERT INTO `trainer` (`id`, `name`, `age`, `email`, `number`, `level`, `created_date`) VALUES
 (7, 'test', '25', 'test@gmail.com', '1234567890', 'Professional', '2020-11-30 18:22:06'),
-(8, 'AkshayMetry1234', '25', 'akshaymetry@gmail.com', '8928786588', 'Professional', '2020-11-30 19:48:54');
+(10, 'test2', '30', 'test2@gmail.com', '1234567890', 'Professional', '2020-12-02 13:51:19'),
+(11, 'test3', '25', 'test3@gmail.com', '1234567890', 'Beginner', '2020-12-02 13:52:06');
 
 -- --------------------------------------------------------
 
@@ -92,7 +93,6 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `created_at`) VALUES
 (1, 'admin', '$2y$10$MeMLgVRD/tpGllB/PPipjew/yIBnkTSx7V/I05YuSffUE/.LCe11y', '2020-10-30 19:51:13'),
-(2, 'yash', '$2y$10$ARHiyNwfb4JxEz4XLUagle9nAfZLnKvkg9EOsrW0yDz5EhS1XuCQ2', '2020-11-08 23:40:29'),
 (3, 'test', '$2y$10$vqRyzggmI3aih8Mv7KLvY.Z1kutIlrh9K90aIU.4xOyv21hZrYzPm', '2020-11-14 21:35:15');
 
 --
@@ -126,13 +126,13 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `members`
 --
 ALTER TABLE `members`
-  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `trainer`
 --
 ALTER TABLE `trainer`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `users`
